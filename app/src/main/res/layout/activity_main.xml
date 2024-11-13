@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#345732"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="416dp"
+        android:layout_height="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonSumar"
+                android:layout_width="208dp"
+                android:layout_height="131dp"
+                android:backgroundTint="#B15F4B"
+                android:text="Suma"
+                android:textColorLink="#FFFFFF"
+                android:textSize="34sp"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/buttonRestar"
+                android:layout_width="208dp"
+                android:layout_height="131dp"
+                android:backgroundTint="#000000"
+                android:text="Resta"
+                android:textColorLink="#FFFFFF"
+                android:textSize="34sp"
+                app:cornerRadius="0dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonMultiplicar"
+                android:layout_width="208dp"
+                android:layout_height="131dp"
+                android:backgroundTint="#000000"
+                android:text="Multip"
+                android:textColorLink="#FFFFFF"
+                android:textSize="34sp"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/buttonDividir"
+                android:layout_width="208dp"
+                android:layout_height="131dp"
+                android:backgroundTint="#B15F4B"
+                android:text="Division"
+                android:textColorLink="#FFFFFF"
+                android:textSize="34sp"
+                app:cornerRadius="0dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="392dp"
+        android:layout_height="399dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="100dp"
+                android:layout_height="128dp"
+                android:backgroundTint="#494545"
+                android:text="Num1"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp"
+                app:cornerRadius="0dp" />
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="100dp"
+                android:layout_height="128dp"
+                android:backgroundTint="#494545"
+                android:text="Num 2"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp"
+                app:cornerRadius="0dp" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="100dp"
+                android:layout_height="128dp"
+                android:backgroundTint="#352A2A"
+                android:text="Res"
+                android:textColorLink="#FFFFFF"
+                android:textSize="16sp"
+                app:cornerRadius="0dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:backgroundTint="#121111"
+            android:text="Calculadora binaria"
+            android:textAlignment="center"
+            android:textColorLink="#FFFFFF"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
